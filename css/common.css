@@ -1,0 +1,261 @@
+/** 样式初始化
+  * 通用化 設定
+  */
+
+  .login,
+  .register {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+  .login {
+    background: url(../img/bg4.jpeg) no-repeat center center;
+  }
+  .register {
+    background: url(../img/bg3.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .form-container {
+    width: 370px;
+    height: 210px;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .form-container .manage-tip .title {
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+  }
+  
+  .loginForm,
+  .registerForm {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px 40px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #ccc;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+  
+  .tiparea {
+    text-align: right;
+    font-size: 12px;
+    color: #333;
+  }
+  .tiparea p a {
+    color: #409eff;
+  }
+
+  /* 表格&彈窗 共同 ============================ */
+  .el-table__body .el-table__row .isStock { color: #00BB00; font-weight: bold; }
+  .el-table__body .el-table__row .noStock { color: #FF7575; font-weight: bold; }
+
+  /* 麵包屑 */
+  .category {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #F0F0F0;
+  }
+
+  /* 共同 ============================ */
+  .margin30 {
+    margin: 30px auto;
+  }
+
+  /* 主頁 ============================ */
+  .index-container {
+    width: 100%;
+    height: 100%;
+  }
+  .index-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    text-align: center;
+    color: 999;
+  }
+  .index-content .title {
+    font-size: 22px;
+  }
+  .index-content .lead {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  /* 內頁 ============================ */
+  .content-wrap {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content-wrap .content-inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .content-wrap .content-inner .content-title {
+    height: 35px;
+    font-size: 18px;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .content-wrap .content-inner span {
+    line-height: 35px;
+  }
+
+  .content-wrap .content-inner .icons {
+    width:20px;
+    height: 20px;
+    padding-right: 8px;
+    position: relative;
+    top:3px;
+  }
+
+  .content-wrap .content-inner .content-box {
+    margin: 20px 0
+  }
+
+  .content-wrap .content-inner .content-box .charts {
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 2px 6px 0 #E0E0E0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .content-wrap .content-inner .content-box .charts:not(:first-child) {
+    margin-top: 25px;
+  }
+
+  /* chart 單元item ============================== */
+  /* number zone */
+  .content-inner .content-box .member-zone,
+  .content-inner .content-box .info-zone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .content-inner .content-box .member-zone .member-zone-item,
+  .content-inner .content-box .info-zone .info-zone-item {
+    width: 23%;
+    height: 90px;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .content-inner .content-box .member-zone .member-zone-item.orange { background-color:#FF9224; }
+  .content-inner .content-box .member-zone .member-zone-item.blue { background-color: #2894FF; }
+  .content-inner .content-box .member-zone .member-zone-item.gray { background-color: #9d9d9d; }
+  .content-inner .content-box .member-zone .member-zone-item.green { background-color: #00BB00; }
+  .content-inner .content-box .member-zone .member-zone-item.red { background-color: #FF7575; }
+
+  .content-inner .content-box .member-zone .member-zone-item.noData,
+  .content-inner .content-box .info-zone .info-zone-item.noData {
+    width: 100%;
+    color: #999; 
+    line-height: 90px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+  }
+
+  .content-inner .content-box .member-zone .member-zone-item:first-child,
+  .content-inner .content-box .info-zone .info-zone-item:first-child {
+    margin-left: 0;
+  }
+  .content-inner .content-box .member-zone .member-zone-item:last-child,
+  .content-inner .content-box .info-zone .info-zone-item:last-child {
+    margin-right: 0;
+  }
+  .content-box .member-zone .member-zone-item .member-title {
+    font-size: 18px;
+    padding: 17px 0;
+  }
+  .content-box .member-zone .member-zone-item .member-num {
+    font-size: 22px;
+  }
+
+  /* info zone */
+  .content-inner .content-box .info-zone .info-zone-item {
+    color: #333;
+    height: auto;
+    padding: 20px 10px;
+    text-align: left;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 2px 6px 0 #E0E0E0;
+  }
+
+  .content-inner .content-box .info-zone .info-zone-item .info-num .num{
+    font-size: 26px;
+  }
+
+  .content-inner .content-box .info-zone .info-zone-item .daily-num div {
+    height: 20px;
+  }
+
+  .content-inner .content-box .info-zone .info-zone-item .info-num,
+  .content-inner .content-box .info-zone .info-zone-item .daily-num div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .content-inner .content-box .info-zone .info-zone-item .info-num .percentage {
+    color: red;
+  }
+
+  .content-inner .content-box .info-zone .info-zone-item .daily-num .percentage {
+    color: green;
+  }
+
+
+  /* table data ============================ */
+  .content-inner .tab_wrap {
+    /* display: flex; */
+    margin: 25px auto;
+    padding: 15px;
+    width: 100%;
+    /* max-height: 600px; */
+    background-color:#F0F0F0;
+    border:1px solid #d4d4d4;
+  }
+
+  .tab_wrap .btn-right {
+    float: right;
+    clear: both;
+  }
+
+  .tab_wrap.flowDialog .el-form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tab_wrap.flowDialog .el-form-wrap .el-form-item .el-input {
+    width: 250px;
+    margin: 0 15px 0 0;
+  }
+
+  /* 分頁 ============================ */
+  .pagination_wrap {
+    float: right;
+    margin-top: 10px;
+  }
