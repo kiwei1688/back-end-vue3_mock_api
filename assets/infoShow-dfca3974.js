@@ -1,0 +1,1 @@
+import{a as c,c as s,j as e,I as n,bu as o,ab as a}from"./index-032c6402.js";const r={class:"content-wrap"},_={class:"content-inner"},d={class:"content-title"},i=e("span",null,"信息管理",-1);function l(p,h){const t=o;return c(),s("div",r,[e("div",_,[e("div",d,[n(t,{class:"icons"}),i])])])}const f={},m=a(f,[["render",l]]);export{m as default};

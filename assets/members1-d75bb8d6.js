@@ -1,0 +1,1 @@
+import{a as c,c as n,j as e,I as o,an as s,ab as a}from"./index-032c6402.js";const _={class:"content-wrap"},r={class:"content-inner"},d={class:"content-title"},i=e("span",null,"會員列表",-1);function l(p,u){const t=s;return c(),n("div",_,[e("div",r,[e("div",d,[o(t,{class:"icons"}),i])])])}const m={},h=a(m,[["render",l]]);export{h as default};
